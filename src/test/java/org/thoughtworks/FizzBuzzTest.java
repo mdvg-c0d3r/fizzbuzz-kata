@@ -29,6 +29,15 @@ class FizzBuzzTest {
 
     @Test
     void shouldPrintNumbers1to100InDifferentLines() {
-        assertEquals(fizzBuzz.printNumbersFrom1To100(), outputStreamCaptor.toString().trim());
+        var actual = fizzBuzz.printNumbersFrom1To100();
+        assertEquals(outputStreamCaptor.toString().trim(), actual);
     }
+
+    @Test
+    void shouldCheckMultiple3() {
+        int number = 3;
+        var actual = fizzBuzz.checkMultipleThree(number);
+        assertEquals(true, actual);
+    }
+
 }

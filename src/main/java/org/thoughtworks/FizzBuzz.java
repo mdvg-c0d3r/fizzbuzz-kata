@@ -17,4 +17,11 @@ public class FizzBuzz {
 
         return numbers.toString();
     }
+
+    public boolean checkMultipleThree(int number) {
+        if (number % 3 == 0) {
+            return true;
+        }
+        return false;
+    }
 }
