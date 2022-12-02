@@ -2,6 +2,8 @@ package org.thoughtworks;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        var fizzbuzz = new FizzBuzz();
+
+        fizzbuzz.printNumbersFrom1To100();
     }
 }
